@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|PT+Sans');
+
+:root {
+  --font-main: 'PT Sans', sans-serif;
+  --font-headers: 'Merriweather', serif;
+  --font-inputs: 'Montserrat', sans-serif;
+  --color-btn-gray: #363636;
+  --color-btn-red: #ea445b;
+  --color-blue: #28b7d7;
+  --color-light-blue: #1cafcf;
+  --color-border-gray: #e6e6e6;
+  --color-text-light: #b4b4b4;
+  --color-text-gray: #8e9197;
+  --color-text-dark: #323a45;
+}
+
+ul, p, li, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
+
+ul { list-style: none; }
+
+body {
+	background-color: #eaedf1;
+}
+
+#app {
+	max-width: 1200px;
+	margin: 20px auto;
+	color: var(--color-text-dark);
+	font-family: var(--font-main);
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+h1 {
+	color: var(--color-blue);
+	font-family: var(--font-headers);
+	margin: 10px auto;
+}
+
+input {
+	border-radius: 4px;
+	margin: 18px 0;
+	padding: 18px;
+	border: 2px solid var(--color-border-gray);
+	font-size: 18px;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	font-family: var(--font-inputs);
+	font-style: italic;
+	color: var(--color-text-gray);
+}
+
+input::placeholder {
+	color: var(--color-text-light);
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	color: #fff;
+	background: var(--color-btn-gray);
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 3px;
+	text-align: center;
+	padding: 8px 16px;
+	margin: 12px auto;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	font-family: var(--font-main);
+}
+
+.button:hover,
+a.button:hover {
+	background-color: color(var(--color-btn-gray) lightness(35%));
+	text-decoration: none;
+	cursor: pointer;
+}

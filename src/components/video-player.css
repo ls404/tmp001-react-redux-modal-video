@@ -1,0 +1,203 @@
+.video-wrapper {
+	border-radius: 4px;
+	overflow: hidden;
+	height: 454px;
+	position: relative;
+}
+
+.video-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(8, 90, 108, 0.76);
+	opacity: 0;
+	transition: all 0.3s ease 0s;
+}
+
+.video-controls.open {
+	opacity: 1;
+}
+
+
+input[type="range"] {
+  height: 64px;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+input[type="range"]:focus {
+  outline: none;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 7px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #1CAFCF;
+  border-radius: 4px;
+  border: 3px solid #1cafcf;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 3px solid #FFFFFF;
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: #1CAFCF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #1CAFCF;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 7px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #1CAFCF;
+  border-radius: 4px;
+  border: 3px solid #1cafcf;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 3px solid #FFFFFF;
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: #1CAFCF;
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-progress {
+  background-color: #1CAFCF;
+}
+input[type="range"]::-moz-range-track {
+  background-color: #093b46;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 7px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #1CAFCF;
+  border: 3px solid #1cafcf;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #1CAFCF;
+  border: 3px solid #1cafcf;
+  border-radius: 8px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 3px solid #FFFFFF;
+  height: 15px;
+  width: 15px;
+  border-radius: 8px;
+  background: #1CAFCF;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #093b46;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #1CAFCF;
+}
+
+
+.play-btn, .volume-btn {
+	width: 8.5%;
+	height: 64px;
+	border: none;
+	vertical-align: bottom;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+.play-btn:hover, .volume-btn:hover {
+	box-shadow: 5px 0px 10px 0px color(#1cafcf blackness(70%) alpha(50%));
+}
+
+.play-btn {
+	background: #1cafcf url('../images/play-icon.png') no-repeat center;
+}
+
+.play-btn.pause {
+	background-image: url('../images/pause-icon.png');
+}
+
+.volume-btn {
+	background: color(#1cafcf alpha(22%)) url('../images/sound-icon.png') no-repeat center;
+	position: relative;
+	transition: all 0.3s ease 0s;
+}
+
+.volume-btn:not(.mute) {
+	filter: brightness(130%);
+}
+
+.volume-btn.loud {
+	background-image: url('../images/loud-icon.png');
+}
+
+.volume-btn.mute {
+	background-image: url('../images/mute-icon.png');
+}
+
+input.volume-slider {
+	position: absolute;
+	top: -36px;
+	left: 0;
+	width: 100%;
+	height: 36px;
+	opacity: 0;
+	transition: all 0.5s ease-in;
+}
+
+.volume-btn:hover > input.volume-slider {
+	width: 200px;
+	background-color: rgba(8, 90, 108, 0.76);
+	border-bottom: 2px solid #1cafcf;
+	cursor: pointer;
+	opacity: 1;
+	filter: brightness(80%);
+}
+
+input.progress-slider {
+	width: 83%;
+}
+
+.progress-pseudo {
+	height: 100%;
+	position: absolute;
+	right: 0;
+	display: inline-block;
+}
+
+.remaining-time {
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	bottom: 70px;
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 1);
+}
+

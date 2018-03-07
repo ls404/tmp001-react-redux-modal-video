@@ -1,0 +1,153 @@
+
+.comment-header.row,
+.reply-header.row {
+	justify-content: flex-start;
+	padding-bottom: 22px;
+	@nest & > .column {
+		align-items: flex-start;
+		@nest & > h4 {
+			color: #28b7d7;
+			font-family: 'Merriweather', serif;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 5px 0;
+		}
+		@nest & > p {
+			font-size: 10px;
+			font-weight: bold;
+			color: #b4b4b4;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.avatar {
+	border-radius: 50%;
+	margin-right: 18px
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.comment-reply,
+.replies-list {
+	border-left: 6px solid color( #e6e6e6 blackness(25%));
+	padding: 14px 0 8px 24px;
+}
+
+
+
+
+.replies-list {
+	padding-top: 4px;
+	padding-bottom: 22px;
+}
+
+.reply-header.row {
+	padding-top: 22px;
+}
+
+.reply-header.row + p {
+	border-bottom: 1px solid  #e6e6e6;
+	border-left: 6px solid  #e6e6e6;
+	padding: 6px 0 8px 24px;
+	margin-bottom: 4px;
+	line-height: 28px;
+}
+
+.comment-reply > ul.row {
+	justify-content: flex-start;
+}
+
+.reply-comment, .reply-photo, .reply-feedback {
+
+}
+
+
+
+.button[class*="reply-"]:hover,
+.button[class*="reply-"].active {
+	color: #323a45;
+}
+
+input[name="reply"] {
+	margin: 0;
+}
+
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.comment-reply > ul.row {
+	justify-content: flex-start;
+}
+
+.comment-content > ul.row > li:last-of-type {
+	position: absolute;
+	right: 0;
+}
+
+.reply-header.row {
+	padding-top: 22px;
+}
+
+.reply-header.row + p {
+	border-bottom: 1px solid #e6e6e6;
+	border-left: 6px solid #e6e6e6;
+	padding: 6px 0 8px 24px;
+	margin-bottom: 4px;
+	line-height: 28px;
+}
+
+.comment-reply {
+	padding-top: 0px;
+}
+
+.comment-reply > ul.row {
+	justify-content: flex-start;
+}
+
+
+.button {
+	color: #fff;
+	background: #363636;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 3px;
+	text-align: center;
+	padding: 8px 16px;
+	margin: 12px auto;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.button:hover,
+a.button:hover {
+	background-color: color(#363636 lightness(35%));
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:active,
+button:active,
+a:active,
+.button:focus,
+button:focus,
+a:focus {
+	outline: none;
+}
+
+.button[class*="reply-"] {
+	background-color: transparent;
+	color: #b4b4b4;
+	margin: 0 20px 0 0;
+	padding: 2px 2px 12px 0;
+}

@@ -1,0 +1,85 @@
+
+.button {
+	color: #fff;
+	background: #363636;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 3px;
+	text-align: center;
+	padding: 8px 16px;
+	margin: 12px auto;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	font-family: 'PT Sans', sans-serif;
+;
+}
+
+.button:hover,
+a.button:hover {
+	background-color: color(#363636 lightness(35%));
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.modal-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.85);
+	overflow: auto;
+}
+
+.modal,
+.pseudo-modal {
+	background: #fff;
+	margin: 50px auto;
+	padding: 30px;
+	border-radius: 4px;
+	width: 867px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.pseudo-modal > p {
+	text-align: center;
+	padding-bottom: 20px;
+	color: #ea445b;
+}
+
+
+.close-btn {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	border: none;
+	background-image: url('../images/close-btn.png');
+	position: absolute;
+	top: -8px;
+	right: -8px;
+}
+
+.close-btn:hover {
+	cursor: pointer;
+	transform: rotate(90deg);
+	transition: all 0.5s ease-in;
+}
+
+.close-btn:not(:hover) {
+	transform: rotate(-90deg);
+	transition: all 0.5s ease-out;
+}
+
+
+.button:active,
+button:active,
+a:active,
+.button:focus,
+button:focus,
+a:focus {
+	outline: none;
+}

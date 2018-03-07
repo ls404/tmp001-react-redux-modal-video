@@ -1,0 +1,12 @@
+.responsiveParameters {
+        width: 867px;
+}
+
+.custom-overlay {
+  background: rgba(36, 123, 160, 0.7) !important;
+}
+.custom-modal {
+  background: #b2dbbf !important;
+  max-width: 900px !important;
+  width: 100%;
+}

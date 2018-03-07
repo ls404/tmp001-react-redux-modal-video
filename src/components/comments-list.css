@@ -1,0 +1,151 @@
+
+/*ul, p, li, h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }*/
+
+ul { list-style: none; }
+
+.avatar {
+    border-radius: 50%;
+    margin-right: 18px
+}
+
+
+.comment-content {
+	border-left: 6px solid #e6e6e6;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 22px 0 0 24px;
+}
+
+.comment-content > p {
+	font-size: 16px;
+	margin-bottom: 4px;
+	line-height: 28px;
+}
+
+.comment-content > ul.row {
+	justify-content: flex-start;
+	position: relative;
+}
+
+.comment-content > ul.row > li:last-of-type {
+	position: absolute;
+	right: 0;
+}
+
+
+.column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.comments-list {
+	margin-left: -30px;
+	@nest & > li {
+		border-top: 1px solid #e6e6e6;
+		padding-top: 45px;
+		padding-left: 15px;
+		margin-top: 16px;
+	}
+}
+
+.comment-header.row,
+.reply-header.row {
+	justify-content: flex-start;
+	padding-bottom: 22px;
+	@nest & > .column {
+		align-items: flex-start;
+		@nest & > h4 {
+			color: #28b7d7;
+			font-family: 'Merriweather', serif;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 5px 0;
+		}
+		@nest & > p {
+			font-size: 10px;
+			font-weight: bold;
+			color: #b4b4b4;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+
+.button {
+	color: #fff;
+	background: #363636;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 3px;
+	text-align: center;
+	padding: 8px 16px;
+	margin: 12px auto;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	font-family: 'PT Sans', sans-serif;
+;
+}
+
+.button:hover,
+a.button:hover {
+	background-color: color(#363636 lightness(35%));
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:active,
+button:active,
+a:active,
+.button:focus,
+button:focus,
+a:focus {
+	outline: none;
+}
+
+
+
+.button.icon:hover {
+	color: #28b7d7;
+}
+
+.button.icon:before {
+	width: 16px;
+	height: 16px;
+	padding-right: 6px;
+	vertical-align: bottom;
+	display: inline-block;
+	filter: grayscale(100%);
+	transition: all 0.3s ease 0s;
+}
+
+.button.icon:hover:before {
+	filter: initial;
+}
+
+.button.icon {
+	background-color: transparent;
+	color: #323a45;
+	padding: 2px 2px 2px 0;
+	margin: 16px 0;
+}
+
+.like-btn, .share-btn, .comment-btn, .report-btn {
+
+}
+
+.like-btn.icon.button, .share-btn.icon.button, report-btn.icon.button{
+	margin-right: 1em;
+}
+
+.faCol {
+	color: #28b7d7;
+	font-size: 1.4em;
+}

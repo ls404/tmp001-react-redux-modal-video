@@ -1,0 +1,88 @@
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+
+.button {
+	color: #fff;
+	background: #363636;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 3px;
+	text-align: center;
+	padding: 8px 16px;
+	margin: 12px auto;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+	font-family: 'PT Sans', sans-serif;
+;
+}
+
+.button:hover,
+a.button:hover {
+	background-color: color(#363636 lightness(35%));
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.button:active,
+button:active,
+a:active,
+.button:focus,
+button:focus,
+a:focus {
+	outline: none;
+}
+
+
+.button.icon {
+	background-color: transparent;
+	color: #323a45;
+	padding: 2px 2px 2px 0;
+	margin: 16px 0;
+}
+
+.button.icon:hover {
+	color: #28b7d7;
+}
+
+.button.icon:before {
+	width: 16px;
+	height: 16px;
+	padding-right: 6px;
+	vertical-align: bottom;
+	display: inline-block;
+	filter: grayscale(100%);
+	transition: all 0.3s ease 0s;
+}
+
+.button.icon:hover:before {
+    filter: initial;
+}
+
+.button.icon.like-btn, .button.icon.share-btn {
+	margin-right: 18px;
+}
+
+.like-btn, .share-btn, .edit-btn, .delete-btn {
+
+}
+
+.delete-btn {
+	background-color: #ea445b;
+	margin-left: 6px;
+}
+
+.delete-btn:hover {
+	background-color: color(#ea445b blackness(25%));
+}
+
+.faCol {
+	color: #28b7d7;
+	font-size: 1.4em;
+}
